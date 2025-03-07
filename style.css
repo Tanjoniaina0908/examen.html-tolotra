@@ -1,0 +1,97 @@
+.galerie{
+  float: left;
+  max-width: 320px;
+  flex: 0 0 300px; /* Largeur fixe de 300px */
+  position: sticky;
+  ;overflow: hidden;
+  top: 0;
+  height: 100vh; /* Hauteur totale de la fenêtre */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+.galerie img{
+  /* max-width: 100%; */
+  max-height: 100%;
+  object-fit: cover;
+  width: auto;
+}
+
+.body{
+  /* display: flex; */
+  height: 100vh;
+  
+}
+
+  body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+ }
+.corp{
+  float: right;
+  flex: 1;
+  padding: 20px;
+  overflow-y: scroll;
+  padding-right: 900px;
+  height: 20vh;
+  margin-left:30px ;
+}
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #0056b3;
+}
+  
+  .pdf-images {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap; 
+    align-content: flex-end;        /* Permet de passer à la ligne si nécessaire */
+    justify-content: center; /* Centre les images horizontalement */
+                 /* Ajoute un espace entre les images */
+    
+                }
+  .contacter{
+
+  }
+  .pdf-images img {
+    max-width: 200px;        /* Définit une taille maximale pour les images */
+    width: 100%;
+    height: auto;
+
+  }
+
+  @media (max-width: 768px) {
+    .body {
+      flex-direction: column;
+    }
+  
+    .galerie{
+      flex: 0 0 auto;
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  
+    .corp {
+      flex: 0 0 auto;
+      width: 100%;
+      height: auto;
+      overflow-y: visible;
+    }
+  }
