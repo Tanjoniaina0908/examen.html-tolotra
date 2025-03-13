@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 <title>Title of the document</title>
 </head>
 
 <body>
     <div class="body">
+        
         <div class="galerie">
-            <img width="600" height="600"  src="./IMG_20250217_192941.jpg" alt="galerie">
+            <img width="40" height="45"  src="./IMG_20250217_192941.jpg" alt="galerie">
         </div>   
-        <div class="corp"></div>
+        <div class="corp">
                  <h1>RAHARIMANJATO TOLOTRINIANA <br>web Developer </h1>
             <a href="mon-cv.pdf.pdf" download>Télécharger mon CV</a>
-                <h1>Mon portfolio</h1>
-                        <div class="pdf-images">
-                            <img src="./téléchargement.jpeg" alt="web"><br>
-                            <img src="./css-html2-e1517475681211.png.webp" alt="css html"><br>
-                             <img src="./git.png" alt="git"><br>
-                            <img src="./netlify.png" alt="netlify">
+                <h2>Mon portfolio</h2>
+                        <div class="portfolio">
+                            <img  class="jp" src="./téléchargement.jpeg" alt="web"><br>
+                            <img   class="css" src="./css-html2-e1517475681211.png.webp" alt="css html"><br>
+                             <img class="git"   src="./git.png" alt="git"><br>
+                            <img class="netly"  src="./netlify.png" alt="netlify">
                         </div>
                 <h1>A propos </h1>
                          <p>  
@@ -28,45 +29,53 @@
                              J'ai également passé l'examen et obtenu le certificat validé par CSS.
                          </p>
                 <h1>Mes compétances</h1>
-                    <p>html</p>
-                    <p>45%</p>
-                    <p>css</p>
-                    <p>45%</p>
-            <a href="brochure.cv.pdf" download>Télécharger mon CV</a>
-
-                    <div class="identité">
-                            <div class="localisation">
-                                  <p > <img  width="20px" src="./map.svg" alt="map"> Tananarivo Madagascar</p>
-                             </div>
-                            <div class="tel"> 
-                                 <h2>
-                                     <img width="20px" src="./call.svg"  alt="call">
-                                      <a href="tel:"> +261385651853</a>
-                                 </h2>
+                    <div class="new">html</div>
+                       <div class="in" >
+                            <div class="myhtml">45%</div>
+                       </div>
+                    <div class="new">css</div>
+                       <div class="in" >
+                        <div class="myhtml">45%</div>
+                    </div>    
+                <a href="brochure.cv.pdf" download>Télécharger mon CV</a>
+                 <h3>contactez-moi</h3>
+                    <div class="identite">
+                         <div class="mp">
+                                 <div class="localisation">
+                                     <img  width="40px" src="./map.svg" alt="map"> 
+                                     <p >Tananarivo Madagascar</p><br>
+                                 </div>
+                                <div class="tel"> 
+                                        <img width="40px" src="./call.svg"  alt="call">
+                                        <p> +261385651853</p><br>
+                                  </div>
+                                 <div class="email">
+                                    <img class="email" width="40px"  src="./email.svg" alt="email"> 
+                                    <p >Raharimanjatotolotriniaina@gmail.com</p> <br>
+                                 </div>
                             </div>
-                            <div class="email">
-                                <img class="email" width="20px"  src="./email.svg" alt="email"> 
-                                <a href="mailto: Raharimanjatotolotriniaina@gmail.com" >Raharimanjatotolotriniaina@gmail.com</a>
-                            </div>
-                             <img src="./tana.webp" alt="ville">
+                             <img width="200px" src="./tana.webp" alt="ville">
                             </div> 
-                 <div class="contacter">
+                        </div>        
+                    <div class="contacter">
                             <h3>contactez-moi. Envoyez-moi un message</h3>
-                            <form action="mailto:raharimanjatotolotriniaina@.com" method="post" enctype="text/plain">
-        
-                                     <label for="firstName">Nom :</label>
-                                     <input type="text" id="firstName" name="firstName" required><br>
-            
-                                     <label for="lastName">Sujet :</label>
-                                     <input type="text" id="lastName" name="lastName" required><br>
-            
-                                     <label for="message">Message :</label>
-                                     <textarea id="message" name="message" rows="4" required></textarea><br>
-            
-                                    <button type="submit">ENVOYER UN MESSAGE</button>
-                             </form>
+                            <div class="input">
+                                <input  type="text" style="width: 700px; height: 50px; font-size: 20px; padding: 10px; border: 2px solid black;border-radius: 10px;" name="Nom" placeholder="Nom" >
+                                <br>
+                                <br>
+                                <input type="text" style="width: 700px; height: 50px; font-size: 20px; padding: 10px; border: 2px solid black;border-radius: 10px;" name="email" placeholder="Email">
+                                <br>
+                                <br>
+                                <input type="text" style="width: 700px; height: 50px; font-size: 20px; padding: 10px; border: 2px solid black;border-radius: 10px;" name="Sujet" placeholder="Sujet">
+                                <br>
+                                <br>
+                                <input type="text" style="width: 700px; height: 50px; font-size: 20px; padding: 10px; border: 2px solid black;border-radius: 10px;" name="message" placeholder="message">
+                                <br>
+                                <br>
+                                <button type="submit" style="width: 720px; height: 50px; font-size: 20px; padding: 10px; border: 2px solid black; border-radius: 10px;" class="send-button">Envoyer</button>
+                            </div>   
                     
-                    </div> 
+                     </div>                     
          </div>                 
 </div>           
 </body>
