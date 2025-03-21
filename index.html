@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-<title>Title of the document</title>
+    <title>Menu Overplay</title>
 </head>
 
 <body>
@@ -10,36 +12,67 @@
              <div class="galerie">
                  <img width="600" height="1010"  src="./IMG_20250217_192941.jpg" alt="galerie">
             </div>  
+   <!-- Menu overlay -->
+   <!-- now create a toggle button here -->
+
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                 <span></span>
+            </label>
+
+
+        <nav id="menu-overlay">
+            <!-- <label for="menu-toggle" id="close-menu">&times;</label> -->
+
+             <ul>
+                     <li><a href="#home">Home</a></li>
+                     <li><a href="#portfolio">Portfolio</a></li>
+                     <li><a href="#about">About</a></li>
+                     <li><a href="#contact">Contact</a></li>
+             </ul>
+        </nav>
+    <section id="content">
         <div class="corp">
-                     <h1>RAHARIMANJATO TOLOTRINIANA <br> --- web Developer--- </h1>
-                 <h1> <a href="mon-cv.pdf.pdf" download>Télécharger mon CV</a></h1>
-                     <h2>Mon portfolio</h2>
-                          <div class="portfolio">
-                                 <img  class="jp" src="./téléchargement.jpeg" alt="web"><br>
-                                 <img   class="css" src="./css-html2-e1517475681211.png.webp" alt="css html"><br>
-                                 <img class="git"   src="./git.png" alt="git"><br>
-                                <img class="netly"  src="./netlify.png" alt="netlify">
-                         </div>
-                      <h2>A propos </h2>
-                             <p>  
-                                 Je suis étudiant en développement web et passionné par l'informatique,ce qui déja étudier le css,html,github,netlify et aussi la problème solving .
-                                 Je poursuis également des études en informatique au CNTEMAD, conscient qu'il me reste encore beaucoup à apprendre, car mon objectif est de réaliser un projet ambitieux.
-                                 Soucieux d'enrichir continuellement mon expérience, je mets en pratique mes apprentissages pour développer des projets concrets. D'ailleurs, dans mon portfolio, vous trouverez le projet que j'ai réalisé durant un mois d'apprentissage.
-                                 J'ai également passé l'examen et obtenu le certificat validé par CSS.
-                            </p>
-                     <h2>Mes compétances</h2>
-                      <div class="new">html</div>
-                             <div class="in" >
-                                 <div class="myhtml">60%</div>
-                             </div>
+                     <div id="home" class="tab-content">
+                         <h1>RAHARIMANJATO TOLOTRINIANA <br> --- web Developer--- </h1>
+                         <h1> <a href="mon-cv.pdf.pdf" download>Télécharger mon CV</a></h1>
+                    </div> 
+                    
+                    <div id="portfolio" class="tab-content">      
+                            <h2>Mon portfolio</h2>
+                                <div class="portfolio">
+                                     <img  class="jp" src="./téléchargement.jpeg" alt="web"><br>
+                                    <img   class="css" src="./css-html2-e1517475681211.png.webp" alt="css html"><br>
+                                    <img class="git"   src="./git.png" alt="git"><br>
+                                    <img class="netly"  src="./netlify.png" alt="netlify">
+                                 </div>
+                    </div>  
+                    <div id="about" class="tab-content">   
+                         <h2>A propos </h2>
+                                <p>  
+                                     Je suis étudiant en développement web et passionné par l'informatique,ce qui déja étudier le css,html,github,netlify et aussi la problème solving .
+                                     Je poursuis également des études en informatique au CNTEMAD, conscient qu'il me reste encore beaucoup à apprendre, car mon objectif est de réaliser un projet ambitieux.
+                                    Soucieux d'enrichir continuellement mon expérience, je mets en pratique mes apprentissages pour développer des projets concrets. D'ailleurs, dans mon portfolio, vous trouverez le projet que j'ai réalisé durant un mois d'apprentissage.
+                                    J'ai également passé l'examen et obtenu le certificat validé par CSS.
+                                </p>
+                        <h2>Mes compétances</h2>
+                        <div class="new">html</div>
+                                <div class="in" >
+                                     <div class="myhtml">60%</div>
+                                </div>
                       <div class="new">css</div>
                             <div class="in" >
-                              <div class="myhtml">60%</div>
-                     </div>    
-                 <a href="brochure.cv.pdf" download>Télécharger mon CV</a>           
-                <h3>contactez-moi</h3>
-                    <div class="identite">
-                         <div class="mp">
+                                <div class="myhtml">60%</div>
+                        </div>    
+                        <a href="brochure.cv.pdf" download>Télécharger mon CV</a>           
+                    </div>
+                    
+                    <div id="contact" class="tab-content"></div>
+                        <h3>contactez-moi</h3>
+                        <div class="identite">
+                            <div class="mp">
                                  <div class="localisation">
                                      <img  width="40px" src="./map.svg" alt="map"> 
                                      <p >Tananarivo Madagascar</p><br>
@@ -55,9 +88,8 @@
                             </div>
                              <img width="200px" src="./tana.webp" alt="ville">
                             </div> 
-                        </div>        
-      
-            
+                        </div>       
+                    </div>     
                         <div class="contacter">
                             <h3>Contactez-moi. Envoyez-moi un message</h3>
                             <div class="input">
@@ -75,10 +107,12 @@
                                 <br>
                                 <button type="submit" style="width: 250px; height: 50px; font-size: 20px; padding: 10px; border: 2px solid black; border-radius: 10px;" class="send-button">Envoyer</button>
                             </div>  
+    </section>
                            <div class="photo" >
                              <img width="400" height="80" src="./reseau sociaux.png" alt="photo">
                           </div>
-                    
+                        </div>
+                     
      </div>                              
  </div>
                      
